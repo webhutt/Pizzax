@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,700&family=Satisfy&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5) ;
+    height: 110px;
+}
+
+
+section nav .logo img{
+    width: 65px;
+    margin: 15px -100px;
+    position: relative;
+    cursor: pointer;
+    animation: animate 5s linear infinite;
+
+}
+
+
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+section nav ul li a{
+    color: black;
+    transition: 0.3s;
+    font-size: 17px;
+    
+}
+
+section nav ul li a:hover{
+    color: orangered;
+}
+
+section nav .login a{
+    color: black;
+    border: 2px solid orangered;
+    border-radius: 20px;
+    padding: 6px 15px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(191, 5, 5, 0.5);
+    
+}
+
+section nav p{
+    font-size: 20px;
+    position: relative;
+    right: 195px;
+}
+
+section nav  p span{
+    color: orangered;
+}
+
+section nav .login a:hover{
+    background: orangered;
+    color: white;
+}
+
+section .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 80px;
+}
+
+section .content .content-text h1{
+    color: black;
+    font-size: 65px;
+    position: relative;
+    top: -25px;
+    left: 5%;
+}
+
+section .content .content-text h1 span{
+    color: orangered;
+    font-family: "Satisfy";
+}
+
+section .content .content-text p{
+    color: black;
+    width: 650px;
+    position: relative;
+    top: 20px;
+    left: 5%;
+    line-height: 23px;
+    text-align: justify;
+
+}
+section .content .content-text .btn{
+    color: black;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    top: 90px;
+    left: 5%;
+    border: 2px solid orangered;
+    padding: 10px 20px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(216, 13, 13, 0.5);
+    
+}
+
+section .content .content-text .btn:hover{
+    color: white;
+    background: orangered;
+}
+
+section .content .content-image img{
+   margin: 55px 25px;
+   width: 600px; 
+   animation: animate 5s linear infinite;
+}
+
+.abt_sec{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.abt_sec .abt-img img{
+    width: 650px;
+    animation: animate 5s linear infinite;
+}
+
+.abt_sec .abt-text h1{
+    font-size: 45px;
+    bottom: 40px;
+    position: relative;
+}
+.abt_sec .abt-text h1 span{
+    color: orangered;
+}
+
+.abt_sec .abt-text h3{
+    position: relative;
+    font-size: 25px;
+    bottom: 10px;
+}
+
+.abt_sec .abt-text p{
+    width: 650px;
+    text-align: justify;
+    line-height: 23px;
+}
+
+.abt_sec .abt-btn{
+    color: black;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    top: 170px;
+    left: -44.5%;
+    border: 2px solid orangered;
+    padding: 10px 20px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(216, 13, 13, 0.5);
+}
+.abt_sec .abt-btn:hover{
+    color: white;
+    background: orangered;
+}
+
+.abt_sec .abt-btn a{
+    color: black;
+}
+
+.abt_sec .abt-btn a:hover{
+    color: white;
+}
+
+
+.banner{
+    width: 100%;
+    height: 50vh;
+    background-image: url(img2/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.banner h1{
+    font-family: "Satisfy";
+    color: orangered;
+    display: flex;
+    font-size: 100px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.banner .banner_center{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px auto;
+}
+
+.banner .banner_center h2{
+    font-family: "Satisfy";
+    font-size: 60px;
+    color: white;
+    margin-right: 25px;
+
+
+}
+
+.banner .btn1{
+    color: white;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    left: 44%;
+    top: 10%;
+    border: 2px solid orangered;
+    padding: 10px 20px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(216, 13, 13, 0.5);
+    
+}
+
+.banner .btn1:hover{
+    color: white;
+    background: orangered;
+}
+
+.team{
+    width: 100%;
+    height: 60vh;
+    padding: 10% 0;
+}
+
+.team h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+}
+
+.team h1 span{
+    color: orangered;
+    margin-left: 15px;
+
+}
+
+.team .team_line_1{
+    width: 100%;
+    height: 50px;
+    background: orangered;
+    position: relative;
+    top: 25%;
+    z-index: 1;
+}
+
+.team .team_line_2{
+    width: 100%;
+    height: 50px;
+    background: orangered;
+    position: relative;
+    top: 56%;
+    z-index: 1;
+}
+
+.team .team_box{
+    width: 95%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    bottom: 55px;
+    padding: 5px 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0;
+}
+
+.team .team_box .team_card{
+    width: 340px;
+    height: 425px;
+    background: #fff;
+    padding: 20px 0px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 auto;
+    z-index: 5;
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.2);
+}
+
+.team .team_box .team_card:hover{
+    transform: scale(1.03);
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.8)
+}
+
+.team .team_box .team_card .team_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.team .team_box .team_card .team_img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+
+.team .team_box .team_card .team_tag h2{
+    margin: 10px 0;
+}
+
+
+.team .team_box .team_card .team_tag p.info{
+    text-align: center;
+    margin: 0 20px;
+    line-height: 23px;
+    margin-top: 10px;
+    width:;
+}
+
+
+
+.food{
+    width: 100%;
+    height: 70vh;
+    padding: 10% 0;
+}
+
+.food h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+}
+
+.food .job{
+    text-align: left;
+    margin: 0 30px;
+}
+
+.food h1 span{
+    color: orangered;
+    margin-left: 15px;
+
+}
+
+
+
+.food .food_box{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    bottom: 55px;
+    padding: 95px 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0;
+}
+
+.food .food_box .food_card{
+    width: 450px;
+    height: 455px;
+    background: #fff;
+    padding: 0px 0px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 auto;
+    z-index: 5;
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.2);
+}
+
+.food .food_box .food_card:hover{
+    transform: scale(1.03);
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.8)
+}
+
+.food .food_box .food_card .food_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.food .food_box .food_card .food_img img{
+    width: 450px;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+
+.food .food_box .food_card .food_tag h2{
+    margin: 10px 30px;
+    font-size: 30px;
+    text-align: left;
+}
+
+
+.food .food_box .food_card .food_tag .job span{
+    color: orangered;
+}
+
+.food .food_box .food_card .food_tag .fd-btn {
+    color: black;
+    border: 2px solid orangered;
+    border-radius: 20px;
+    padding: 6px 15px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(191, 5, 5, 0.5);
+    width: 100px;
+    margin: 15px 60%;
+}
+
+.food .food_box .food_card .food_tag .fd-btn a{
+    color: black;
+}
+
+.food .food_box .food_card .food_tag h3{
+    color: orangered;
+    position: absolute;
+    text-align: left;
+    padding: 20px 30px;
+    
+    
+}
+
+
+
+.food .food_box .food_card .food_tag .fd-btn:hover{
+    background: orangered;
+    color: white;
+}
+
+.food .food_box .food_card .food_tag .fd-btn a:hover{
+    color: white;
+}
+
+
+.food .food_box .food_card .food_tag p.info{
+    text-align: left;
+    margin: 0 20px;
+    line-height: 23px;
+    margin-top: 10px;
+    width:;
+}
+
+.order{
+    width: 100%;
+    height: 100vh;
+    padding: 10% 0;
+    background-color: rgb(240, 238, 238);
+}
+
+.order h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    padding: 20px;
+}
+
+.order h1 span{
+    color: orangered;
+    margin-right: 10px;
+}
+
+.order .order_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 15px;
+}
+
+.order .order_main .order_img img{
+    width: 650px;
+}
+
+.order img{
+    width: 200px;
+
+}
+
+
+
+.order .order_main .order_form{
+    width: 50%;
+    height: 675px;
+    background: #faf3ce;
+    padding: 15px 20px 0 20px;
+    border-radius: 20px;
+
+}
+
+.order .order_main .order_form h2{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.order .order_main .order_form .order_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 0 20px;
+    margin-bottom: 30px;
+}
+
+.order .order_main .order_form .order_list p{
+    margin-top: 12px;
+}
+
+.order .order_main .order_form .order_list input{
+    width: 350px;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    outline: none;
+    background: none;
+    color: black;
+    padding: 10px 5px;
+
+
+}
+
+.order .order_main .order_form .order_list textarea{
+    width: 350px;
+    height: 200px;
+    background: none;
+    outline: none;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    color: black;
+    padding: 10px 5px;
+}
+
+.order .order_main .order_form .order-btn {
+    color: black;
+    border: 2px solid orangered;
+    padding: 9px 16px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(191, 5, 5, 0.5);
+    width: 100px;
+}
+
+.order .order_main .order_form .order-btn:hover{
+    background: orangered; 
+    color: white; 
+}
+
+footer{
+    padding: 70px;
+    background: orangered;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container{
+    max-width: 1370px;
+    margin: auto;
+}
+
+.col{
+    width: 20%;
+    padding: 0 25px;
+}
+
+.col h4{
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    font-family: "poppins", sans-serif;
+    line-height: 1.5;
+    position: relative;
+}
+
+.col h4::before{
+    content: "";
+    position: absolute;
+    width: 65px;
+    background-color: black;
+    height: 2.5px;
+    left: 0;
+    bottom: -10px;
+    box-sizing: border-box;
+}
+
+.col ul li{
+    margin-top: 8px;
+}
+
+.col ul li a{
+    color: white;
+    font-size: 17px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.col ul li a:hover{
+    margin-left: 5px;
+    color: rgb(255, 187, 60);
+}
+
+.col .social-media a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    line-height: 40px;
+    margin: 0 10px 10px 0 ;
+    color: black;
+    text-align: center;
+    transition: all 0.5s ease;
+    border: 2px solid black;
+}
+
+.col .social-media a:hover{
+    background: black;
+    color: white;
+}
+
+
+@keyframes animate{
+
+    0%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+
+}
